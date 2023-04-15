@@ -20,6 +20,6 @@ eureka:
             predicates:
               - Path=/api/v1/users/**
           - id: project-service
-            uri: lb://user-service
+            uri: lb://project-service
             predicates:
               - Path=/api/v1/projects/**
