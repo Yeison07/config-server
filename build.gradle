@@ -34,7 +34,7 @@ tasks.named('test') {
 jar {
     manifest {
         attributes(
-                'Main-Class': 'co.ufps.edu.configservice'
+                'Main-Class': 'co.ufps.edu.configservice.ConfigServiceApplication'
         )
     }
 }
