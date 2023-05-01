@@ -30,3 +30,11 @@ dependencyManagement {
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'co.ufps.edu.configservice'
+        )
+    }
+}
