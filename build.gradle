@@ -8,6 +8,11 @@ group = 'co.ufps.edu'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
+bootJar {
+    launchScript()
+    requiresUnpack '**/spring-boot-*.jar'
+}
+
 repositories {
     mavenCentral()
 }
