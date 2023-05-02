@@ -23,4 +23,4 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
     - name: Run test with Gradle
-      run: ./gradlew test --continue --test co.ufps.edu.configservice.*
+      run: ./gradlew test --continue
