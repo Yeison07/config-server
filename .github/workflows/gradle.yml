@@ -25,7 +25,9 @@ jobs:
     - name: Run test with Gradle
       run: ./gradlew test --continue
     - name: Copy JAR artifact
-      run: cp ./build/libs/config-service-0.0.1-SNAPSHOT.jar .
+      run: | 
+        cp ./build/libs/config-service-0.0.1-SNAPSHOT.jar .
+        ls: .
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
     - name: Login to Docker Hub
