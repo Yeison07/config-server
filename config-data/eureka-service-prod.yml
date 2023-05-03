@@ -7,6 +7,3 @@ eureka:
     register-with-eureka: false
     service-url:
       default-zone: https://eureka-service-production.up.railway.app:${PORT}/eureka/
-spring:
-  profiles:
-    active: ${SPRING_PROFILES_ACTIVE}
