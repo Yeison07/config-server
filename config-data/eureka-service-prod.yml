@@ -1,9 +1,4 @@
 server:
   port: ${PORT}
   address: 0.0.0.0
-eureka:
-  client:
-    fetch-registry: false
-    register-with-eureka: false
-    service-url:
-      default-zone: https://eureka-service-production.up.railway.app/eureka/
+
