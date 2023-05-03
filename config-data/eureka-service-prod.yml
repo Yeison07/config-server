@@ -9,4 +9,8 @@ eureka:
     registerWithEureka: false
     service-url:
       default-zone: https://${eureka.instance.hostname}/eureka/
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
