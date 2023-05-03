@@ -1,4 +1,12 @@
 server:
   port: ${PORT}
   address: 0.0.0.0
+eureka:
+  instance:
+    hostname: eureka-service-production.up.railway.app
+  client:
+    fetchRegistry: false
+    registerWithEureka: false
+    service-url:
+      default-zone: http://${eureka.instance.hostname}/eureka/
 
