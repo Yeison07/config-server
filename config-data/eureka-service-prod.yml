@@ -6,4 +6,7 @@ eureka:
     fetch-registry: false
     register-with-eureka: false
     service-url:
-      default-zone: https://${eureka.instance.hostname}:${server.port}/eureka/
+      default-zone: https://eureka-service-production.up.railway.app:${PORT}/eureka/
+spring:
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}
