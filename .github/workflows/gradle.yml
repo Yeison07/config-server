@@ -27,7 +27,7 @@ jobs:
     - name: Copy JAR artifact
       run: | 
         cp ./build/libs/config-service-0.0.1-SNAPSHOT.jar .
-        ls: .
+        ls .
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
     - name: Login to Docker Hub
