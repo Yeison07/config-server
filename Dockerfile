@@ -1,4 +1,11 @@
+FROM openjdk:17 AS build
+RUN apk add --no-cache gradle
+COPY . /app
+WORKDIR /app
+RUN gradle build
+
 FROM openjdk:17
-COPY ./config-service-0.0.1-SNAPSHOT.jar config_app.jar
-EXPOSE 8080
-ENTRYPOINT ["java","-jar","/config_app.jar"]
+COPY --from=build /app/build/libs/*.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
+
+
