@@ -8,11 +8,6 @@ group = 'co.ufps.edu'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '17'
 
-bootJar {
-    launchScript()
-    requiresUnpack '**/spring-boot-*.jar'
-}
-
 repositories {
     mavenCentral()
 }
@@ -36,10 +31,3 @@ tasks.named('test') {
     useJUnitPlatform()
 }
 
-jar {
-    manifest {
-        attributes(
-                'Main-Class': 'co.ufps.edu.configservice.ConfigServiceApplication'
-        )
-    }
-}
