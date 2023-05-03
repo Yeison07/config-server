@@ -1,5 +1,4 @@
 FROM openjdk:17 AS build
-RUN apk add --no-cache gradle
 COPY . /app
 WORKDIR /app
 RUN gradle build
